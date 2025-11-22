@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Personal Page</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background: url("YOUR_BACKGROUND_IMAGE") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+}
+
+/* FROSTED CATEGORY WRAPPERS */
+.category {
+    width: 90%;
+    max-width: 550px;
+    margin: 10px 0;
+    padding: 18px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* DARK INNER SECTIONS */
+.section {
+    background: rgba(25,25,25,0.85);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* PROFILE */
+.pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.occupation {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* ICON LINKS */
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.icon-btn:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+/* STATUS */
+.status-box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.status-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.status-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.status-desc {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* PROJECT BUTTONS */
+.project-btn {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.2s;
+}
+.project-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+</style>
+</head>
+<body>
+<!-- CATEGORY 1: PROFILE -->
+<div class="category">
+    <div class="section">
+        <img src="YOUR_PFP_HERE" class="pfp" />
+
+        <div class="name">Your Name</div>
+        <div class="occupation">Your Occupation</div>
+
+        <div class="icon-row">
+            <a href="#" class="icon-btn">A</a>
+            <a href="#" class="icon-btn">B</a>
+            <a href="#" class="icon-btn">C</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- CATEGORY 2: STATUS -->
+<div class="category">
+    <div class="section status-box">
+        <img src="STATUS_IMAGE" class="status-img" />
+
+        <div>
+            <div class="status-title">Status Title</div>
+            <div class="status-desc">Short description of your current status or activity.</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- CATEGORY 3: PROJECTS -->
+<div class="category">
+    <div class="section">
+
+        <a href="#" class="project-btn">Project One</a>
+        <a href="#" class="project-btn">Project Two</a>
+        <a href="#" class="project-btn">Project Three</a>
+
+    </div>
+</div>
+
+</body>
+</html>
