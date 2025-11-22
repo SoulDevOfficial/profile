@@ -158,8 +158,8 @@ body::before {
     <div class="section">
         <img src="https://cdn.discordapp.com/avatars/1254195552808206429/951f82bc0c5dc01512ca2255c18e0ee0.png?size=1024" class="pfp" />
 
-        <div class="name">Your Name</div>
-        <div class="occupation">Your Occupation</div>
+        <div class="name">Soul | soulwatcher._</div>
+        <div class="occupation">Developer・Creator of NYRA</div>
 
         <div class="icon-row">
             <a href="#" class="icon-btn">A</a>
@@ -176,8 +176,8 @@ body::before {
         <img src="https://cdn.discordapp.com/avatars/1396678263513813113/bc02a7b5cbf7eefcde14c93f27d1fa16.png?size=1024" class="status-img" />
 
         <div>
-            <div class="status-title">Status Title</div>
-            <div class="status-desc">Short description of your current status or activity.</div>
+            <div class="status-title">Developing @ Wanestial Cloud</div>
+            <div class="status-desc">Maybe even listening to music, who knows...</div>
         </div>
     </div>
 </div>
