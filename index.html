@@ -149,8 +149,16 @@ body::before {
     border: 1px solid rgba(255,255,255,0.2);
     padding: 12px;
     border-radius: 12px;
-    text-align: center;
+
+    display: flex;               /* enable flex layout */
+    flex-direction: row-reverse; /* icon on the RIGHT */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     transition: 0.2s;
+    color: white;
+    text-decoration: none;
 }
 .project-btn:hover {
     background: rgba(255,255,255,0.2);
